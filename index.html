@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Exercício</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+      <form class="menu-form" >
+        <fieldset>
+          <div class="fieldset-container">
+            
+              <legend>Informações Pessoais</legend>
+
+              <div class="colluns-2">
+
+              <div class="input-wrapper">
+                <label for="firt-name">Nome</label>
+                <input type="text" id="firt-name" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="name-two">Sobrenome</label>
+                <input type="text" id="name-two" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="fieldset-container">
+            <div class="input-container">
+              <label for="emails"
+                >Email <span>(Digite um e-mail válido.)</span></label
+              >
+              <input type="email" id="emails" required />
+            
+            <div class="input-container">
+              <label for="password">Senha <span>(Minímo 8 caracteres)</span></label>
+              <input type="password" minlength="8" id="password" required>
+            </div>
+          </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-container">
+            <legend>Informações do mentor</legend>
+            <div class="input-container">
+            <label for="name-mentor">Nome do seu mentor <span>(Apenas o primeiro nome)</span></label>
+            <input type="text" id="name-mentor" maxlength="20" required>
+          </div>
+          </div>
+
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-container">
+            <legend>Seus horários disponíveis</legend>
+            <h2>Primeira Mentoria</h2>
+            <div class="colluns-3">
+            <div class="input-container" id="one-timed">
+              <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="input-container">
+              <label for="timed">Das</label>
+              <input type="time" id="timed" required>
+            </div>
+            
+            <div class="input-container">
+              <label for="min-timed">Até</label>
+              <input type="time" id="min-timed" required>
+            </div>
+          </div>
+
+
+
+
+          <h2>Segunda Mentoria</h2>
+            <div class="colluns-3">
+            <div class="input-container" id="two-timed">
+              <label for="date-two">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="date-two" required>
+            </div>
+            <div class="input-container">
+              <label for="timed-two">Das</label>
+              <input type="time" id="timed-two" required>
+            </div>
+            
+            <div class="input-container">
+              <label for="min-timed-two">Até</label>
+              <input type="time" id="min-timed-two" required>
+            </div>
+          </div>
+
+              
+            </div>
+          </div>
+        </fieldset>
+        
+          <button>
+          <input type="submit"
+          form="menu-form"
+          id="buttons"
+          value="Salvar">
+        </button>
+        
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
